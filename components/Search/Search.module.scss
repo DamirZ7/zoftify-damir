@@ -1,0 +1,22 @@
+.root {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f5f6fa;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-right: 14.5px;
+    height: 36px;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    padding: 12px;
+    background-color: #f5f6fa;
+    min-width: 300px;
+    font-size: 13px;
+    line-height: 12px;
+    color: black;
+  }
+}

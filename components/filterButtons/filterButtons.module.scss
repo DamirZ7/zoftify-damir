@@ -1,0 +1,15 @@
+.filterButtons {
+  @apply w-fit min-w-[144px] flex items-center justify-between mr-2 text-[#111] py-[10px] px-3 h-[36px] rounded-lg cursor-pointer;
+
+  &__count {
+    @apply text-white py-1 px-2 h-[20px] rounded-full bg-[#B2C2DF] text-[12px] leading-[12px];
+  }
+
+  &__active {
+    @apply text-white bg-[#177EFF];
+
+    .filterButtons__count {
+      @apply bg-[#70AEFD];
+    }
+  }
+}
