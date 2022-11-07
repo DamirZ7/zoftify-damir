@@ -10,6 +10,9 @@ module.exports = {
         },
       ],
     },
+    fontFamily: {
+      gilroy: ['Gilroy'],
+    },
     extend: {},
   },
   plugins: [],

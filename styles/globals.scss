@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'GILROY';
+  src: url('../assets/Gilroy/gilroy-medium.ttf');
+}
+
 html,
 body {
   padding: 0;

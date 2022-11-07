@@ -1,33 +1,15 @@
 .mainLayout {
-  height: calc(100% - 32px);
-
-  @apply overflow-hidden mt-[16px] mr-[20px] rounded-lg py-[16px] px-0 bg-white;
+  @apply overflow-hidden mt-[16px] mr-[20px] ml-[228px] rounded-lg py-[16px] px-0 bg-white;
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  padding-left: 0;
-  padding-right: 0;
-  width: 100%;
-  height: 48px;
-  background-color: white;
+  @apply fixed top-0 z-50 px-0 w-full h-[48px] bg-white;
 }
-//fixed top-0 z-50 px-0 w-full h-[48px] bg-white
+
 .secondLayout {
-  width: 100%;
-  display: inline-block;
-  padding-top: 48px;
-  height: 100vh;
+  @apply w-full inline-block pt-[48px] h-screen;
 }
-//inline-block w-full pt-[48px] h-screen
+
 .side {
-  float: left;
-  width: 208px;
-  margin-right: 20px;
-  height: 100%;
-  background-color: white;
-  margin-top: 1.5px;
+  @apply fixed float-left w-[208px] mr-[20px] h-full bg-white mt-[1.5px];
 }
-//float-left w-[208px] mr-[20px] mt-[1.5px] h-full bg-white

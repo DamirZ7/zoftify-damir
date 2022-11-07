@@ -4,16 +4,16 @@ import styles from './customButton.module.scss'
 interface ICustomButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   title: string
   width: number
-  handleClick?: () => void
+  onClick?: () => void
 }
 
-const CustomButton: FC<ICustomButton> = ({ type, title, width, handleClick }) => {
+const CustomButton: FC<ICustomButton> = ({ type, title, width, onClick }) => {
   return (
     <button
       type={type}
       className={styles.customButton}
       style={{ width: `${width}px` }}
-      onClick={handleClick}>
+      onClick={onClick}>
       {title}
     </button>
   )

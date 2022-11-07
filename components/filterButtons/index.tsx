@@ -3,19 +3,50 @@ import styles from './filterButtons.module.scss'
 
 interface IFilterButtons {
   title: string
-  count: number
-  isActive?: boolean
-  handleChange: () => void
+  active: boolean
+  isNum?: boolean
+  count?: number
+  onClick?: () => void
+  type?: 'button' | 'submit' | 'reset' | undefined
+  loading?: boolean
+  // disabled: boolean
 }
 
-const FilterButtons: FC<IFilterButtons> = ({ title, count, isActive, handleChange }) => {
+const FilterButtons: FC<IFilterButtons> = ({
+  title,
+  active,
+  isNum = false,
+  count,
+  onClick,
+  type = 'button',
+  // disabled,
+}) => {
   return (
-    <div
-      className={`${styles.filterButtons} ${isActive && styles.filterButtons__active}`}
-      onClick={handleChange}>
-      <span className={styles.filterButtons__title}>{title}</span>
-      <span className={styles.filterButtons__count}>{count}</span>
-    </div>
+    <button
+      className={`${styles.filterButtons}
+            ${active ? styles.filterButtons__active : styles.filterButtons__inactive}
+            `}
+      onClick={() => onClick?.()}
+      type={type}
+      // disabled={disabled}
+    >
+      {title}
+      {isNum && (
+        <div
+          className={`${styles.filterButtons__count}
+                     ${active ? styles.active : styles.inactive}`}>
+          {count}
+        </div>
+      )}
+    </button>
+
+    // <div
+    //   className={`${styles.customSwitcher} ${active && styles.customSwitcher__active}`}
+    //   onClick={() => onClick?.()}
+    //   type={}>
+    //   <span className={styles.customSwitcher__title}>{title}</span>
+    //   <span className={styles.customSwitcher__count}>{count}</span>
+    // </div>
   )
 }
 

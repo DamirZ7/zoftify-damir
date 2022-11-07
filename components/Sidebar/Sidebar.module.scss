@@ -1,4 +1,4 @@
 .sidebar {
-  height: calc(100vh - 48px);
+  height: calc(100% - 48px);
   @apply bg-white mt-[1px] flex flex-col pt-[32px] px-[12px] pb-0;
 }

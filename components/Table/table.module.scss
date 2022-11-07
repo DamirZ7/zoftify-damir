@@ -1,0 +1,41 @@
+.customTable {
+  @apply my-7;
+
+  table {
+    @apply w-full;
+
+    thead {
+      tr {
+        border-bottom: 1px solid #ebeef6;
+      }
+      th {
+        // border-bottom: 1px solid #ebeef6;
+        @apply text-[13px] font-medium text-[#667281] py-[12.5] px-6 font-gilroy;
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #ebeef6;
+      }
+      td {
+        @apply text-[#111] py-8 px-6;
+      }
+    }
+
+    th,
+    td {
+      @apply text-left whitespace-nowrap;
+
+      &:first-child {
+        @apply w-[65px] text-center;
+      }
+
+      &:nth-child(2) {
+        // width: calc(100% - 200px);
+        width: 400px;
+        @apply whitespace-normal;
+      }
+    }
+  }
+}

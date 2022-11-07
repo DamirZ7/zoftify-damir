@@ -1,0 +1,15 @@
+.wrapper {
+  .input {
+    @apply bg-[#f5f6fa] rounded-[8px] font-normal font-[14px] leading-[16px] text-[#667281] p-[12px] w-[365px] outline-none #{!important};
+
+    &.required {
+      @apply border-solid border border-[#ff4d4f];
+    }
+    &:focus {
+      border-width: 1.2px;
+      border-style: solid;
+      border-color: #177eff !important;
+      box-shadow: 0 0 0 1px #177eff !important;
+    }
+  }
+}

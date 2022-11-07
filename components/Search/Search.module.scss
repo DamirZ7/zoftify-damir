@@ -1,22 +1,9 @@
 .root {
   .wrapper {
-    display: flex;
-    align-items: center;
-    background-color: #f5f6fa;
-    border-radius: 8px;
-    overflow: hidden;
-    padding-right: 14.5px;
-    height: 36px;
+    @apply w-[432px] h-[36px] flex items-center justify-between bg-[#f5f6fa] rounded-[8px] overflow-hidden pr-[14.5px];
   }
 
   input {
-    border: none;
-    outline: none;
-    padding: 12px;
-    background-color: #f5f6fa;
-    min-width: 300px;
-    font-size: 13px;
-    line-height: 12px;
-    color: black;
+    @apply border-none outline-none p-[12px] bg-[#f5f6fa] min-w-[385px] font-[13px] text-black leading-[12px];
   }
 }

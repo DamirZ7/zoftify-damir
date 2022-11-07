@@ -16,7 +16,7 @@ const SearchInput: FC<ISearchInputProps> = ({ setSearch }) => {
           aria-label='Search'
           onChange={(event) => setSearch(event.target.value)}
         />
-        <img src={searchSvg.src} alt='Search' className='w-[20px] h-[20px]' />
+        <img src={searchSvg.src} alt='Search' />
       </div>
     </div>
   )

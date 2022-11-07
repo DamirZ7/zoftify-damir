@@ -1,0 +1,9 @@
+.container {
+  padding-left: 28px;
+  .wrapper {
+    @apply flex flex-col gap-[8px] w-fit mt-[18px];
+  }
+  .text {
+    @apply font-normal text-[16px] leading-[150%] items-center text-[#2F2F2F];
+  }
+}

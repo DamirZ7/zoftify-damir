@@ -1,0 +1,9 @@
+.wrapper {
+  .select {
+    @apply bg-[#f5f6fa] rounded-[8px] font-normal text-[14px] leading-[16px] text-[#667281] outline-none w-[365px] p-[12px] #{!important};
+
+    &.required {
+      border: 1px solid #ff4d4f;
+    }
+  }
+}
