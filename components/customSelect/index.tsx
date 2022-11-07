@@ -53,11 +53,6 @@ const CustomSelect: FC<IInputProps> = ({
         borderColor: state.isFocused ? '#177EFF' : null,
         boxShadow: '0 0 0 1px #177eff',
       },
-
-      // Overwrittes the different states of border
-      // borderColor: state.isFocused ? 'yellow' : 'green',
-      // Removes weird border around container
-      // ,
     }),
   }
 
