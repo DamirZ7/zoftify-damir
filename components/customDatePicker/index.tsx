@@ -2,6 +2,8 @@ import { FC } from 'react'
 import { Controller } from 'react-hook-form'
 import styles from './customDatePicker.module.scss'
 import DatePicker from 'react-datepicker'
+import Image from 'next/image'
+import dateIcon from '../../assets/date-icon.svg'
 
 export interface IInputProps {
   placeholder?: string
@@ -30,7 +32,7 @@ const customDatePicker: FC<IInputProps> = ({
         control={control}
         render={({ field: { onChange, value } }) => {
           return (
-            <div className=''>
+            <div className='flex items-center justify-between bg-[#f5f6fa] rounded-[8px] overflow-hidden pr-[14.5px]'>
               <DatePicker
                 id={name}
                 disabled={disabled}
@@ -43,6 +45,7 @@ const customDatePicker: FC<IInputProps> = ({
                 className={`${styles.dateInput} ${!!error ? styles.required : ''}`}
                 {...args}
               />
+              <Image src={dateIcon.src} alt='date' width={15} height={15} />
             </div>
           )
         }}
